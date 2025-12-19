@@ -27,36 +27,54 @@
   <span>LUXORA WATCHES</span>
 </div>
 
-                    
-                    
-                   
-                </nav>
-                <nav class="navbar">
+
+<nav class="navbar">
   <div class="logo"></div>
 
   <div class="menu-toggle" id="menuToggle">
-    <span></span>
-    <span></span>
-    <span></span>
+    ☰
   </div>
 
   <ul class="nav-links" id="navLinks">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Categories</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 <script>
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
+  const navItems = document.querySelectorAll(".nav-link");
 
+  // فتح / إغلاق القائمة
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
+
+  // إغلاق القائمة بعد الضغط على رابط
+  navItems.forEach(item => {
+    item.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
 </script>
+                    
+                    
+                   
+                </nav>
+              
 
             </div>
         </div>
+        <!-- ضع هذا في أعلى الصفحة -->
+
+
+
+
+
+
+<!-- قسم الساعات -->
+
         <div class="free-shipping-bar">
   livraison gratuite au maroc
 </div>
