@@ -28,12 +28,30 @@
 </div>
 
                     
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                       
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <nav class="navbar">
+  <div class="logo">MySite</div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Categories</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
                    
                 </nav>
             </div>
@@ -54,7 +72,7 @@
                     <p>Discover our exclusive collection of premium timepieces from world-renowned brands, now available
                         at competitive Moroccan prices.</p>
                     <div class="cta-buttons">
-                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                        
                         <a href="#categories" class="btn btn-secondary">View Collections</a>
                     </div>
                 </div>
@@ -132,7 +150,7 @@
                         warranty and exceptional service.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/sabnero/" target="_blank">
+                        <a href="https://www.instagram.com/watches luxora/" target="_blank">
   <i class="fab fa-instagram"></i>
 </a>
                         
@@ -209,7 +227,7 @@
 
 
 
-<a href="https://wa.me/212625596851" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/212666394078" class="whatsapp-float" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
